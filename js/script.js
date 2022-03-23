@@ -1,16 +1,21 @@
-let number = 5;
-const leftBorderWidht = 1;
+const numberOfFilms = +prompt('How many movies have you seen?', '');
 
-number = 10;
-console.log(number);
-
-const obj = {
-    a : 50
+const personalMoviesDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
 
-obj.a = 10;
+const a = prompt('One of the movies I watched?', ''),
+      b = prompt('How much would you rate it?'),
+      c = prompt('One of the movies I watched?', ''),
+      d = prompt('How much would you rate it?');
 
-console.log(obj);
+personalMoviesDB.movies[a] = b;
+personalMoviesDB.movies[c] = d;
 
 
 
+console.log(personalMoviesDB);
